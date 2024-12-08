@@ -1,0 +1,35 @@
+### GetGenres
+GET http://localhost:5088/genres
+
+### GetAllGames
+GET http://localhost:5088/games
+
+### GetGameById
+GET http://localhost:5088/games/d90dc06d-6e85-4bc3-99cf-94c85d5d0287
+
+### DeleteGameById
+DELETE http://localhost:5088/games/c6bcd9dd-ef90-417a-9218-02ad0ce5ec44
+
+### CreateGame
+POST http://localhost:5088/games HTTP/1.1
+Content-Type: application/json
+
+{
+ "name": "Test Game",
+ "genreId": "5cd3c590-43f9-42a2-87bf-074bfbd8bbcc",
+ "price": 19.99,
+ "releaseDate": "1992-07-15",
+ "description": "Test description"
+}
+
+### UpdateGame
+PUT http://localhost:5088/games/d90dc06d-6e85-4bc3-99cf-94c85d5d0287
+Content-Type: application/json
+
+{
+ "name": "Minecraft for windows",
+ "genreId": "5774FE19-10AF-48D1-9AB2-7DC3AB8867ED",
+ "price": 7.97,
+ "releaseDate": "2011-11-18",
+ "description": "Minecraft is a 2011 sandbox game developed and published by Swedish video game developer Mojang Studios. Originally created by Markus 'Notch' Persson using the Java programming language, the first public beta build was released on 17 May 2009. The game would be continuously developed from then on, receiving a full release on 18 November 2011. Afterwards, Persson left Mojang and gave Jens Bergensten control over the game's development. In the years since its release, it has been ported to several platforms, including smartphones, tablets, and various video game consoles."
+}
