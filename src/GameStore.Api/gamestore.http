@@ -8,7 +8,7 @@ GET http://localhost:5088/games
 GET http://localhost:5088/games/d90dc06d-6e85-4bc3-99cf-94c85d5d0287
 
 ### DeleteGameById
-DELETE http://localhost:5088/games/c6bcd9dd-ef90-417a-9218-02ad0ce5ec44
+DELETE http://localhost:5088/games/873fe15f-8c3b-4fde-8ebe-bbebfeb9c0c6
 
 ### CreateGame
 POST http://localhost:5088/games HTTP/1.1
